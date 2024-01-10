@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.btn__hide {
+    display: none;
+}
+
+.btn__active {
+    display: block;
+}
+
+.btn__changes {
+    display: none;
+}
+
+.changes__btn, .add__btn, .delete__btn, .search__btn {
+    margin-left: 10px;
+}
+
+.edit__input, .task__input, .task__search {
+    border: none;
+    margin-left: 5px;
+    outline-color: rgb(201, 201, 201);
+    padding: 10px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.edit__input {
+    margin-left: 25px;
+}
+
+.task__input {
+    margin-top: 5.5px;
+    margin-bottom: 7.7px;
+}
+
+.container {
+    background: #f0f0f0;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.row {
+    margin-bottom: 10px;
+    width: 58%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    background-color: #c4c4c4;
+}
+
+.wrapper {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "started started"
+        "in__process in__process"
+        "finished  finished"
+
+}
+
+.header__start, .header__process, .header__finished {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #ffffff;
+}
+
+.started {
+    grid-area: started;
+    background: #f0f0f0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.in__process {
+    grid-area: in__process;
+    background: #f0f0f0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.finished {
+    grid-area: finished;
+    background: #f0f0f0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.wrapper__in_process, .wrapper__finished, .wrapper__started {
+    margin-left: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    background-color: #c4c4c4;
+    margin-bottom: 10px;
+    width: 97.5%;
+    padding: 10px;
+}
+
+.wrapper__started {
+    margin-bottom: 10px;
+}
+
+.header__new-task, .header__fresh-task {
+    background: #ffffff;
+    padding: 5px;
+}
+
+.wrapper__fresh-task {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.task__search {
+    margin-bottom: 5px;
+}
+
+.task__search-wrapper {
+    padding-bottom: 19px;
+    border-bottom: 1px solid black;
+}
+
+.add__to-do, .todo__not-found {
+    width: 500px;
+    margin-left: 100px;
+    padding: 43.5px;
+    text-align: center;
+    color: gray;
+}
+
+.header__wrapper {
+    background: #2e2e2e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    color: rgb(214, 213, 213);
+}
+
+.header__title {
+    margin-top: 10px;
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(214, 213, 213);
+}
+
+.circle__figure-title {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(to top, black, cyan);
+}
+
+.circle__figure-title:hover, .header__title:hover {
+    cursor: pointer;
+    color: rgb(255, 253, 253);
+}
+
+.title {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 70px;
+    border-bottom: 2px solid transparent;
+}
+
+.title:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #606060;
+}
+
+.upload-to-do__btn {
+    border: 0;
+    background: transparent;
+    color: rgb(221, 221, 221);
+}
+
+.time__value {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.time__desc {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.none-value__time {
+    display: none;
+}
